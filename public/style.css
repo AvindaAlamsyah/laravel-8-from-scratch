@@ -1,4 +1,12 @@
 body {
-    background-color: green;
-    color: whitesmoke;
+    background-color: white;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+article + article {
+    margin-top: 2rem;
+    border-top: 1mm solid navy;
 }
