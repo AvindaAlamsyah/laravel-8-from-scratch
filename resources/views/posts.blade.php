@@ -12,7 +12,13 @@
 <body>
     <?php foreach ($posts as $post) : ?>
     <article>
-        <?= $post?>
+        <h1>
+            <?= $post->title ?>
+        </h1>
+
+        <div>
+            <?= $post->excerpt ?>
+        </div>
     </article>
     <?php endforeach; ?>
 </body>
