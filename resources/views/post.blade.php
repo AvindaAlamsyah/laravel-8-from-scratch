@@ -8,7 +8,7 @@
             {{ $post->title }}
         </h1>
         <div>
-            {!! $post->body !!}
+            {!! $post->content !!}
         </div>
     </article>
     <button type="button"><a href="/">Back</a></button>
