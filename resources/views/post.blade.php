@@ -7,6 +7,8 @@
         <h1>
             {{ $post->title }}
         </h1>
+        <h5>{{ $post->category->name }}</h5>
+
         <div>
             {!! $post->content !!}
         </div>

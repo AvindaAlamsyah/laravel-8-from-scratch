@@ -10,6 +10,7 @@
                     {{ $post->title }}
                 </a>
             </h1>
+            <h5>{{ $post->category->name }}</h5>
 
             <div>
                 {{ $post->excerpt }}
