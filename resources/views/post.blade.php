@@ -7,7 +7,7 @@
         <h1>
             {{ $post->title }}
         </h1>
-        <h5>{{ $post->category->name }}</h5>
+        <h5><a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></h5>
 
         <div>
             {!! $post->content !!}
