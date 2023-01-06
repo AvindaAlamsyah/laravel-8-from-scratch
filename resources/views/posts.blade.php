@@ -10,7 +10,9 @@
                     {{ $post->title }}
                 </a>
             </h1>
-            <h5>{{ $post->category->name }}</h5>
+            <p>
+                <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
+            </p>
 
             <div>
                 {{ $post->excerpt }}
