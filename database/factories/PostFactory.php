@@ -26,11 +26,11 @@ class PostFactory extends Factory
         return [
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
-            'title' => $this->faker->words('5', true),
+            'title' => $this->faker->sentence(4),
             'slug' => $this->faker->slug(),
             'excerpt' => $this->faker->sentence(),
             'content' => $this->faker->text(),
-            'publish' => now()
+            'published_at' => $this->faker->dateTimeBetween('-3 months')
         ];
     }
 }

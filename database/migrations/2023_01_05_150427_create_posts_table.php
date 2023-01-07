@@ -21,7 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('slug')->unique();
             $table->text('excerpt');
             $table->text('content');
-            $table->date('publish');
+            $table->date('published_at');
             $table->timestamps();
         });
     }
