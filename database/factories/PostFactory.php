@@ -28,8 +28,8 @@ class PostFactory extends Factory
             'category_id' => Category::factory(),
             'title' => $this->faker->sentence(4),
             'slug' => $this->faker->slug(),
-            'excerpt' => $this->faker->sentence(),
-            'content' => $this->faker->text(),
+            'excerpt' => '<p>' . implode('</p><p>', $this->faker->paragraphs(2)) . '</p>',
+            'content' => '<p>' . implode('</p><p>', $this->faker->paragraphs(6)) . '</p>',
             'published_at' => $this->faker->dateTimeBetween('-3 months')
         ];
     }
